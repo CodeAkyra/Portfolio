@@ -3,13 +3,6 @@ body {
   margin: 0px;
 }
 
-.home {
-  margin-top: 50px;
-  border: solid black;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-
 a {
   font-size: 20px;
   font-weight: bold;
@@ -39,13 +32,13 @@ a:hover {
 }
 
 .nav-bar {
+  position: sticky;
   background-color: #d9d9d9;
   height: 50px;
   box-shadow: 0px 0px 30px;
 }
 
 .nav-content {
-  /* border: solid black; */
   display: flex;
   gap: 20px;
   justify-content: end;
@@ -54,7 +47,14 @@ a:hover {
   margin-top: 0px;
   margin-left: 150px;
   margin-right: 150px;
-  /* background-color: blue; */
+}
+
+.home {
+  height: 2000px;
+  margin-top: 50px;
+  border: solid black;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .header-text {
@@ -64,7 +64,7 @@ a:hover {
 }
 
 /* RESPONSIVE */
-
+/* 
 @media only screen and (max-width: 1300px) {
   body {
     background-color: lightblue;
@@ -132,4 +132,4 @@ a:hover {
     margin-left: 150px;
     margin-right: 150px;
   }
-}
+} */
