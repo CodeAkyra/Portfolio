@@ -11,19 +11,22 @@
     />
   </head>
   <body>
-    <div class="nav-bar">
-      <ul class="nav-content" id="nav-cont">
-        <a href="#Home" class="buttons">Home</a>
-        <a href="#About" class="buttons">About</a>
-        <a href="#Portfolio" class="buttons">Portfolio</a>
-        <a href="#Skills" class="buttons">Skills</a>
-        <a href="#Contact" class="buttons">Contact</a>
+    <header>
+      <a href="#" class="logo">>Code Akyra<</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </div>
-    <div class="home">
-      <span class="header-text">Hello! I'm Mark Orlando Gabriel Pizarra</span>
-    </div>
+    </header>
+    <section class="banner"></section>
   </body>
-
-  <script src="script.js"></script>
+  <script>
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
 </html>
